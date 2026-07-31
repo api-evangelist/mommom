@@ -1,7 +1,25 @@
 aid: mommom
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mommom.png
 name: MomMom
-description: MomMom is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  MomMom (맘맘) is a South Korean consumer parenting and family-activity platform that helps
+  parents discover places to go with their kids and products to buy for them. The mom-mom.net
+  website and app curate kid-friendly destinations by region, family accommodation and resort
+  deals, restaurant and class discounts, and community-driven product rankings (국민템랭킹) covering
+  baby and childcare essentials, alongside parenting tips. It is a B2C curation, deals, and
+  recommendation service, backed as a 500 Global portfolio company; no public developer API,
+  documentation, or well-known discovery surface is currently published (probed 2026-07-20).
 url: https://raw.githubusercontent.com/api-evangelist/mommom/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Parenting
+- Childcare
+- Family
+- Kids Activities
+- Consumer
+- Deals
+- E-commerce
+- South Korea
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mommom-domain-security.yml
 - type: Website
   url: https://mom-mom.net
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
